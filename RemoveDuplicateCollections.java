@@ -7,14 +7,14 @@ public class RemoveDuplicateCollections {
 	public static void main(String[] args) {	
 String string = "We learn java  basics";
 System.out.println("With duplicates: " +string);
-char[] chars = string.toCharArray();
-StringBuilder sb = new StringBuilder();
+char[] ra = string.toCharArray();
+StringBuilder strb = new StringBuilder();
 Set<Character> charSet = new LinkedHashSet<Character>();
-for (char c : chars) {
+for (char c : ra) {
     if(charSet.add(c) ){
-        sb.append(c);
+        strb.append(c);
     }
 }
-System.out.println("without duplicates: " + sb.toString()); // abcdeftz
+System.out.println("without duplicates: " + strb.toString()); 
 
 }}
